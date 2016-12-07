@@ -15,6 +15,14 @@ https://yanpanlau.github.io/2016/10/11/Torcs-Keras.html
 * Tensorflow r0.10
 * [gym_torcs](https://github.com/ugo-nama-kun/gym_torcs)
 
+```
+sudo pip install h5py
+```
+
+```
+sudo apt-get install swig xautomation
+```
+
 # How to Run?
 
 ```
@@ -26,3 +34,5 @@ python ddpg.py
 ```
 
 (Change the flag **train_indicator**=1 in ddpg.py if you want to train the network)
+
+
