@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from gym_torcs import TorcsEnv
 import numpy as np
 import random
@@ -18,7 +20,7 @@ import timeit
 
 OU = OU()       #Ornstein-Uhlenbeck Process
 
-def playGame(train_indicator=1):    #1 means Train, 0 means simply Run
+def playGame(train_indicator=0):    #1 means Train, 0 means simply Run
     BUFFER_SIZE = 100000
     BATCH_SIZE = 32
     GAMMA = 0.99
@@ -159,4 +161,4 @@ def playGame(train_indicator=1):    #1 means Train, 0 means simply Run
     print("Finish.")
 
 if __name__ == "__main__":
-    playGame()
+    playGame(train_indicator=0)
